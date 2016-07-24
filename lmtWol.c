@@ -14,6 +14,7 @@
 
 void usage()
 {
+	printf("lmtWol v0.1\n");
 	printf("please enter the mac address and broadcast port in a following fashion ");
 	printf("00:00:00:00:00:00 9\n"); 
 }
