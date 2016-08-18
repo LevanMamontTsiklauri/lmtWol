@@ -23,7 +23,7 @@ int main()
 
   sock_in.sin_addr.s_addr = htonl(INADDR_ANY);
   sock_in.sin_port = htons(7);
-  sock_in.sin_family = PF_INET;
+  sock_in.sin_family = AF_INET;
 
   status = bind(sock, (struct sockaddr *)&sock_in, sinlen);
   printf("Bind Status = %d\n", status);
