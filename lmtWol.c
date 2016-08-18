@@ -62,7 +62,7 @@ int main(int argc, char const *argv[])
 	memset(&sock_in, 0, sinlen);
 	buflen = MAXBUF;
 	
-	sock = socket (PF_INET, SOCK_DGRAM, IPPROTO_UDP);
+	sock = socket (AF_INET, SOCK_DGRAM, IPPROTO_UDP);
 	sock_in.sin_addr.s_addr = htonl(INADDR_ANY);
 	sock_in.sin_port = htons(0);
 	sock_in.sin_family = PF_INET;
